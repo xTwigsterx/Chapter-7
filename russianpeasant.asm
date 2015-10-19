@@ -21,14 +21,17 @@ L1:
 	div  ebx,2 ; divides ebx by 2
 	test ebx, ebx, 00000001 ; test to odd
 	jz addition ; jumps to addition
-	loop L1
+	test eax,bank ; test if they are the same answer
+	jz done ; ends the process
+	loop L1 ; reloops
 	
 addition:
-	add bank, eax ;  
-	jmp L1
+	add bank, eax ; adds eax to bank  
+	jmp L1 ; jumps back into the loop
 	
 
 done:
 	invoke ExitProcess,0
 main endp
 end main
+
