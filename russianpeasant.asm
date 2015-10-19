@@ -1,4 +1,6 @@
-.386
+;zachariah Alber
+;based on http://mathforum.org/dr.math/faq/faq.peasant.html
+386
 .model flat,stdcall
 .stack 4096
 ExitProcess proto,dwExitCode:dword
@@ -30,5 +32,3 @@ done:
 	invoke ExitProcess,0
 main endp
 end main
-
- 
