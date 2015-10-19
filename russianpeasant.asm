@@ -1,6 +1,7 @@
 ; Zachariah Alber
 ;russian peasant multiplication algorithm
 ;most of this is based on a file online
+;not my final draft
     section .text
 
     global mult
