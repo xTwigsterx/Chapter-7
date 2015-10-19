@@ -5,7 +5,7 @@ ExitProcess proto,dwExitCode:dword
 
 .data
 numX dword 15
-numY dword 24
+numY dword 25
 bank dword 0
 
 .code
